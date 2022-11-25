@@ -1,0 +1,52 @@
+.profile {
+  &__board {
+    gap: 16px;
+    display: flex;
+    margin-top: 36px;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    &--title {
+      background-color: #ededed;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 24px;
+      width: 100%;
+      text-align: center;
+      padding: 8px;
+      border-radius: 8px;
+      color: black;
+    }
+
+    &--container {
+      width: 240px;
+      margin-top: 12px;
+      min-height: 500px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    &--task {
+      padding: 8px;
+      border-radius: 8px;
+      background-color: #f4f4f4;
+      font-size: 14px;
+
+      & > p {
+        margin: 8px 0;
+      }
+    }
+
+    &--add {
+      width: 100%;
+      height: 56px;
+    }
+
+    &--create {
+      width: 240px;
+      height: 40px;
+    }
+  }
+}

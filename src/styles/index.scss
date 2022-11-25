@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: auto;
+  max-width: 90%;
+  padding: 24px 0;
+}
+
+.btn {
+  padding: 8px 28px;
+  background: #eff4fc;
+  color: #1967d2;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  color: #ffffff;
+  background-color: #1967d2;
+}
+
+.overlay {
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: auto;
+    right: 0;
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    background: #1967d2;
+    transition: 0.3s ease-in-out;
+  }
+
+  &:hover {
+    color: #1967d2;
+  }
+
+  &:hover:after {
+    width: 100%;
+    left: 0;
+    right: auto;
+  }
+}
+
+@import url("./_home.scss");
+@import url("./_login.scss");
+@import url("./_profile.scss");
